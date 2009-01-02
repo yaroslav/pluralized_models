@@ -1,0 +1,36 @@
+pluralized_models
+=================
+
+Automatic pluralized AR models generation. For instance, if you have
+
+  class Post < ActiveRecord::Base
+  end
+
+you'll automatically get Posts object proxy that will call singular class methods:
+
+  Posts.find(:all)
+  Posts.all
+  Posts.find_by_title
+  Posts.scoped_by_date
+
+are now available automatically.
+
+Also,
+
+  Posts.new
+  
+will create a new instance of Post.
+
+Meant to be not destructive to existent classes/modules.
+
+INSTALLATION
+============
+
+  script/plugin install git://github.com/yaroslav/pluralized_models.git
+
+from your Rails application directory.
+
+AUTHOR
+======
+
+Copyright (c) 2009 Yaroslav Markin <yaroslav@markin.net>, released under the MIT license
