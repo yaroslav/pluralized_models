@@ -1,7 +1,6 @@
-pluralized_models
-=================
+= pluralized_models
 
-Automatic pluralized AR models generation. For instance, if you have
+<tt>pluralized_models</tt> is a Rails plugin for automatic pluralized AR models generation. For instance, if you have
 
   class Post < ActiveRecord::Base
   end
@@ -23,14 +22,12 @@ will create a new instance of Post.
 
 Meant to be not destructive to existent classes/modules.
 
-INSTALLATION
-============
+== Installation
 
   script/plugin install git://github.com/yaroslav/pluralized_models.git
 
 from your Rails application directory.
 
-AUTHOR
-======
+== Author
 
 Copyright (c) 2009 Yaroslav Markin <yaroslav@markin.net>, released under the MIT license
