@@ -22,6 +22,10 @@ will create a new instance of Post.
 
 Meant to be not destructive to existent classes/modules.
 
+== Why?
+
+http://rails.lighthouseapp.com/projects/8994-ruby-on-rails/tickets/1675
+
 == Installation
 
   script/plugin install git://github.com/yaroslav/pluralized_models.git
